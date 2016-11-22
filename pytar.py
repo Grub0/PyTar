@@ -4,14 +4,12 @@ from pygame import *
 import time
 import sys
 
-shouldPlay= True
 pygame.init()
 screen=pygame.display.set_mode((400,400),0,32)
 pygame.mixer.init()
 hornSound= pygame.mixer.Sound("horns.wav")
 
 def start():
-    shouldPlay = True
     playSound()
 
 def playSound():
